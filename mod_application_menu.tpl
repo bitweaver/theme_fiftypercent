@@ -8,7 +8,7 @@
 <div class="menu {$key}menu">
 	{if $menu.title}
 		{if $gBitSystem->isFeatureActive( 'site_menu_flip_icon' )}
-			<a class="head" href="javascript:icntoggle('{$key}menu');">{biticon ipackage="icons" iname="list-add" id="`$key`menuimg" iexplain="folder"}
+			<a class="head" href="javascript:icntoggle('{$key}menu');">{booticon iname="icon-plus-sign"  ipackage="icons"  id="`$key`menuimg" iexplain="folder"}
 		{else}
 			<a class="head" href="javascript:toggle('{$key}menu');">
 		{/if}
@@ -30,7 +30,7 @@
 {if $gBitSystem->isFeatureActive( 'usermenu' )and $usr_user_menus}
 <div class="menu usrmenu">
 	{if $gBitSystem->isFeatureActive( 'site_menu_flip_icon' )}
-		<a class="head" href="javascript:icntoggle('usrmenu');">{biticon ipackage="icons" iname="list-add" id="usrmenu" iexplain="folder"}
+		<a class="head" href="javascript:icntoggle('usrmenu');">{booticon iname="icon-plus-sign"  ipackage="icons"  id="usrmenu" iexplain="folder"}
 	{else}
 		<a class="head" href="javascript:toggle('usrmenu');">
 	{/if}
